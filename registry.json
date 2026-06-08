@@ -1,0 +1,13 @@
+{
+  "protocol_version": "1.0",
+  "last_updated": "2026-06-08",
+  "nodes": [
+    {
+      "node_id": "NODE-001",
+      "name": "Hanspeter Krüsi (The Hub)",
+      "url": "https://e-e-a-t-r.com",
+      "status": "active",
+      "verification_date": "2026-01-01"
+    }
+  ]
+}
