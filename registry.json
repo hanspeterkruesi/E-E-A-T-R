@@ -1,6 +1,6 @@
 {
   "protocol_version": "1.0",
-  "last_updated": "2026-06-08",
+  "last_updated": "2026-08-16",
   "nodes": [
     {
       "node_id": "NODE-001",
@@ -8,6 +8,14 @@
       "url": "https://e-e-a-t-r.com",
       "status": "active",
       "verification_date": "2026-01-01"
+    },
+    {
+      "node_id": "NODE-002",
+      "name": "Peter Abt (Abt Guitars)",
+      "url": "https://abtguitars.com",
+      "status": "verified",
+      "verification_date": "2026-08-16",
+      "verification_page": "https://e-e-a-t-r.com/nodes/node-002.html"
     }
   ]
 }
