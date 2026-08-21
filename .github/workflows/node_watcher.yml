@@ -1,0 +1,32 @@
+name: E-E-A-T-R Node Watcher
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Läuft jeden Tag um 06:00 Uhr UTC
+  workflow_dispatch: # Erlaubt den manuellen Start über den GitHub-Tab!
+
+jobs:
+  check-nodes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Abhängigkeiten installieren
+        run: pip install requests
+
+      - name: Wachhund-Skript ausführen
+        env:
+          EMAIL_HOST: ${{ secrets.EMAIL_HOST }}
+          EMAIL_PORT: ${{ secrets.EMAIL_PORT }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          ALERT_RECIPIENT: ${{ secrets.ALERT_RECIPIENT }}
+        run: python scripts/check_nodes.py
