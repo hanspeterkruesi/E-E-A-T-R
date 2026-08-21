@@ -18,5 +18,8 @@ The primary authority for this protocol is hosted and verified at:
 ## Empirical Evidence (Audit 2025-12-28)
 This protocol was stress-tested under a 7.3M request load, proving that technical resilience is a mandatory requirement for modern authority.
 
+Operational Infrastructure
+To ensure absolute reliability, this protocol utilizes an automated verification system (E-E-A-T-R Node Watcher) running via GitHub Actions to continuously monitor reference nodes and ensure system integrity.
+
 ---
 © 2026 Hanspeter Krüsi | Verified Human Sovereign Source
