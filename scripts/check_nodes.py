@@ -13,7 +13,7 @@ ALERT_RECIPIENT = os.environ.get("ALERT_RECIPIENT")
 
 REGISTRY_PATH = "registry.json"
 
-def send_alert(node_id, node_name, node_url):
+def send_alert(node_id, node_name, node_url, reason="nicht erreichbar"):
     if not EMAIL_USER or not ALERT_RECIPIENT:
         print(f"E-Mail-Konfiguration fehlt für {node_id}")
         return
@@ -23,7 +23,7 @@ def send_alert(node_id, node_name, node_url):
     msg.set_from(EMAIL_USER)
     msg.set_content(
         f"Achtung,\n\n"
-        f"Der Node {node_id} - {node_name} ({node_url}) war bei 2 Prüfungen innerhalb von 48 Stunden nicht erreichbar.\n"
+        f"Der Node {node_id} - {node_name} ({node_url}) hat den Integritäts-Check über 48 Stunden nicht bestanden (Grund: {reason}).\n"
         f"Der Status in der Registry wurde automatisch auf 'suspended' gesetzt.\n\n"
         f"Dein E-E-A-T-R Wachhund-Skript"
     )
@@ -52,40 +52,52 @@ def check_registry():
         current_status = node.get("status")
         
         if current_status in ["active", "verified"]:
-            is_reachable = False
+            is_healthy = False
+            failure_reason = "nicht erreichbar"
+            
             try:
                 response = requests.get(url, timeout=15, headers={"User-Agent": "EEATR-Wachhund/1.0"})
                 if response.status_code == 200:
-                    is_reachable = True
-            except requests.exceptions.RequestException:
-                is_reachable = False
+                    html_content = response.text
+                    
+                    # Integritäts-Check: Prüfen ob Website erreichbar UND das JSON-LD / Protokoll vorhanden ist
+                    # Wir suchen nach der spezifischen Node-ID und dem Verweis auf die Protokoll-Domain
+                    has_node_id = node_id.lower() in html_content.lower()
+                    has_domain_ref = "e-e-a-t-r.com" in html_content.lower()
+                    
+                    if has_node_id and has_domain_ref:
+                        is_healthy = True
+                    else:
+                        failure_reason = "JSON-LD Schema oder Protokoll-Verweis im Quellcode nicht gefunden"
+                        print(f"WARNUNG: Node {node_id} ist online, aber die Protokoll-Signatur fehlt!")
+                else:
+                    failure_reason = f"HTTP Status Code {response.status_code}"
+            except requests.exceptions.RequestException as e:
+                failure_reason = f"Verbindungsfehler: {e}"
             
-            if is_reachable:
-                # Reset beim Erfolg: Wenn er wieder da ist, löschen wir den Ausfall-Marker
+            if is_healthy:
+                # Reset beim Erfolg: Wenn alles passt, löschen wir den Ausfall-Marker
                 if "first_failed_at" in node:
                     del node["first_failed_at"]
                     updated = True
             else:
-                # Node ist nicht erreichbar
+                # Node ist entweder offline oder der Quellcode ist nicht mehr valide
                 if "first_failed_at" not in node:
-                    # Erster Ausfall registriert
                     node["first_failed_at"] = now.isoformat()
                     updated = True
-                    print(f"Erster Ausfall für {node_id} registriert am {node['first_failed_at']}")
+                    print(f"Erster Fehler für {node_id} registriert am {node['first_failed_at']} (Grund: {failure_reason})")
                 else:
-                    # Es gab schon einen früheren Ausfall. Prüfen, ob 48 Stunden vergangen sind.
                     first_failed = datetime.fromisoformat(node["first_failed_at"])
                     time_diff = now - first_failed
                     
                     if time_diff >= timedelta(hours=48):
-                        # 48 Stunden überschritten und immer noch offline -> Suspended!
                         node["status"] = "suspended"
-                        del node["first_failed_at"] # Aufräumen
+                        del node["first_failed_at"]
                         updated = True
-                        send_alert(node_id, node.get("name"), url)
+                        send_alert(node_id, node.get("name"), url, reason=failure_reason)
                         print(f"Node {node_id} nach >48h auf 'suspended' gesetzt.")
                     else:
-                        print(f"Node {node_id} ist offline, aber die 48-Stunden-Frist läuft noch (seit {time_diff}).")
+                        print(f"Node {node_id} fehlerhaft, aber die 48-Stunden-Frist läuft noch (seit {time_diff}).")
 
     if updated:
         data["last_updated"] = today_str
