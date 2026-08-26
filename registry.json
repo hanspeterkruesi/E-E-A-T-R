@@ -1,6 +1,6 @@
 {
   "protocol_version": "1.0",
-  "last_updated": "2026-08-16",
+  "last_updated": "2026-08-25",
   "nodes": [
     {
       "node_id": "NODE-001",
@@ -16,6 +16,22 @@
       "status": "verified",
       "verification_date": "2026-08-16",
       "verification_page": "https://e-e-a-t-r.com/nodes/node-002.html"
+    },
+    {
+      "node_id": "NODE-003",
+      "name": "Practomed GmbH",
+      "url": "https://www.reprop.ch",
+      "status": "active",
+      "verification_date": "2026-08-25",
+      "verification_page": "https://e-e-a-t-r.com/nodes/node-003.html"
+    },
+    {
+      "node_id": "NODE-004",
+      "name": "STUTZCARE Therapiezentrum GmbH",
+      "url": "https://stutzcare.ch",
+      "status": "active",
+      "verification_date": "2026-08-25",
+      "verification_page": "https://e-e-a-t-r.com/nodes/node-004.html"
     }
   ]
 }
