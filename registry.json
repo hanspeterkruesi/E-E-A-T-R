@@ -21,15 +21,15 @@
       "node_id": "NODE-003",
       "name": "Practomed GmbH",
       "url": "https://www.reprop.ch",
-      "status": "suspended",
-      "verification_date": "2026-09-01",
+      "status": "verified",
+      "verification_date": "2026-09-03",
       "verification_page": "https://e-e-a-t-r.com/nodes/node-003.html"
     },
     {
       "node_id": "NODE-004",
       "name": "STUTZCARE Therapiezentrum GmbH",
       "url": "https://stutzcare.ch",
-      "status": "active",
+      "status": "verified",
       "verification_date": "2026-08-25",
       "verification_page": "https://e-e-a-t-r.com/nodes/node-004.html"
     }
