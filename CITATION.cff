@@ -6,7 +6,6 @@ abstract: "A web architecture model designed to establish digital authority, sea
 authors:
   - family-names: "Krüsi"
     given-names: "Hanspeter"
-    orcid: "https://orcid.org/0000-0002-XXXX-XXXX" # Optional: falls eine ORCID vorhanden ist
 version: "1.0.0"
 date-released: 2026-01-01
 url: "https://e-e-a-t-r.com/"
