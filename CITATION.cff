@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this framework, please cite it using the metadata from this file."
+type: software
+title: "E-E-A-T-R Framework"
+abstract: "A web architecture model designed to establish digital authority, search resilience, and structured entity verification across interconnected web domains."
+authors:
+  - family-names: "Krüsi"
+    given-names: "Hanspeter"
+    orcid: "https://orcid.org/0000-0002-XXXX-XXXX" # Optional: falls eine ORCID vorhanden ist
+version: "1.0.0"
+date-released: 2026-01-01
+url: "https://e-e-a-t-r.com/"
+license: "CC-BY-SA-4.0"
