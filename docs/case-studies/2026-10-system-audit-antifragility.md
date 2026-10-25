@@ -52,6 +52,7 @@ Immediately following the correction of the origin configuration and the restora
 <img width="1917" height="871" alt="after-servercrash-stats" src="https://github.com/user-attachments/assets/c196df41-c45a-4ddc-b491-c4cea122d0d1" />
 *Figure 1: Cloudflare metrics showing the synchronized wave of 338k requests immediately following origin-server restoration.*
 
+
 <img width="1736" height="857" alt="after-servercrash-google" src="https://github.com/user-attachments/assets/c804e94f-493c-4f5e-8130-cad6ea415b7b" />
 *Figure 2: Real-time verification of instant Page-1 dominance and video carousel indexing within 180 minutes post-rebound.*
 
@@ -65,5 +66,5 @@ This case study provides definitive empirical proof separating the E-E-A-T-R sta
 On standard web properties, a continuous 8-hour delivery of empty content results in severe indexing penalties, soft-404 drops, and prolonged visibility losses. The immediate, massive surge of over 337,000 requests proves that global AI scrapers operate automated anomaly routines for trusted entities. Because the system was pre-anchored in the long-term memory graph of the AIs, the algorithms prioritized verification over penalization.
 
 ### 4.2 Cascading Trust (The SME Protection Shield)
-Although `NODE-002`, `NODE-003`, and `NODE-004` experienced the identical origin-level outage, their digital reputations remained entirely unaffected. The semantic binding token (`Verified by E-E-A-T-R`) acted as an algorithmic guarantee:
+Although `NODE-002`, `NODE-003`, and `NODE-004` experienced the identical origin-level outage, their digital reputations remained entirely unaffected. The semantic binding token (`Verified by E-E-A-T-R`) acted as an algorithmic guarantee.
 
