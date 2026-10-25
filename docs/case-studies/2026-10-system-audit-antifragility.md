@@ -41,12 +41,18 @@ Due to an internal deployment script error on the origin server level, all domai
 ### 3.2 Post-Rebound Empirical Data
 Immediately following the correction of the origin configuration and the restoration of the "Golden Core" (the high-density E-E-A-T-R semantic assets), the edge layer recorded a massive, synchronized infrastructure query wave:
 
+<img width="1917" height="871" alt="after-servercrash-stats" src="https://github.com/user-attachments/assets/c196df41-c45a-4ddc-b491-c4cea122d0d1" />
+
+
 | Metric | Recorded Value | Algorithmic Vector Analysis |
 | :--- | :--- | :--- |
 | **Total Cloudflare Requests** | **338,090** | Highly concentrated request wave executed by AI web scrapers to reconstruct the corrupted entity memory graph. |
 | **Unique Network Visitors** | **243,850** | Confirms a broad, parallel ecosystem sweep from diverse autonomous clusters rather than a single repeating bot. |
 | **Downtime Penalty Impact** | **0.0%** | Zero ranking drops or exclusion flags across traditional and generative search indexes. |
 | **Indexing Latency (New Content)** | **< 180 Minutes** | Human Premium content ("Basic Rock Guitar Training - Essential Licks") published 3 hours post-rebound achieved instant Page-1 SERP dominance and Video Carousel integration. |
+
+<img width="1736" height="857" alt="after-servercrash-google" src="https://github.com/user-attachments/assets/c804e94f-493c-4f5e-8130-cad6ea415b7b" />
+
 
 ---
 
