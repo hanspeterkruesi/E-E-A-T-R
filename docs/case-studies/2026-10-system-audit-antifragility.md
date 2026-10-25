@@ -61,10 +61,10 @@ Immediately following the correction of the origin configuration and the restora
 While standard web telemetry often interprets traffic spikes as isolated, non-cyclical events, the E-E-A-T-R Protocol network recorded a distinct, secondary validation wave precisely 24 hours after the initial origin-server restoration.
 
 <img width="1911" height="906" alt="after-servercrash-stats-2nd-audit" src="https://github.com/user-attachments/assets/028c5954-8dd2-4177-89a2-8790b7023fc6" />
-*Figure 3: 2nd audit.*
+*Figure 3: 2nd Audit (24-Hour Deep-Tissue Validation).*
 
 <img width="1912" height="897" alt="after-servercrash-7days-stats" src="https://github.com/user-attachments/assets/f5a54be1-94cf-42d7-af71-386a3fe22008" />
-*Figure 7: 7 days stats.*
+*Figure 4: Cumulative 7-Day Ecosystem Impact (1.47M Requests).*
 
 #### 1. The Sustained Integrity Check
 Following the first automated anomaly routine (which peaked at 338k requests), global LLM infrastructures executed a secondary, deep-structural audit. This indicates a multi-tier verification process:
