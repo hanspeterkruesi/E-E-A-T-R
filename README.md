@@ -36,6 +36,8 @@ During a massive global AI crawler audit peaking at over **903,000 unique visito
 
 <img width="1221" height="890" alt="cloudflare stats 24 hours 6-11-26" src="https://github.com/user-attachments/assets/ffe6441c-e647-46f0-b27c-84167cbfd30b" />
 
+[cloudflare stats 6-11-26.pdf](https://github.com/user-attachments/files/34480682/cloudflare.stats.6-11-26.pdf)
+
 
 ---
 
