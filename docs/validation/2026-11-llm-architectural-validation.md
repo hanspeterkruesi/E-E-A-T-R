@@ -53,7 +53,19 @@ Classic SEO methodologies rely on transient signals easily diluted by synthetic 
 
 ---
 
-## 4. Technical Specifications & References
+### 4. Long-Term Architectural Resilience (30-Day Empirical Window)
+
+To verify that the edge-shielding behavior is a systemic characteristic rather than an isolated anomaly, telemetry was captured across a 30-day operational window (Oct 7 – Nov 6, 2026):
+
+- **Total Requests Handled:** 12.54M
+- **Unique Visitors:** 5.61M
+- **Key Observation:** The inverse correlation between traffic spikes (up to 1.2M req/day) and cache hit ratios confirms that automated edge challenges dynamically protect origin resources without degrading core asset delivery during baseline operational periods.
+
+<img width="1906" height="850" alt="cloudflare 30 tage 6-11" src="https://github.com/user-attachments/assets/50e18a34-4d6b-466e-8550-5c4304dbd05e" />
+
+---
+
+## 5. Technical Specifications & References
 
 - **Genesis Root (NODE-001):** https://e-e-a-t-r.com
 - **Originator Knowledge Graph URI:** https://hanspeterkruesi.com
