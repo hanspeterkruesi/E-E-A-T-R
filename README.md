@@ -29,7 +29,7 @@ The protocol was successfully stress-tested under a 7.3M request load and 1.5M u
 
 ### Audit 2: Origin-Level Outage & Antifragility Proof (October 2026)
 An unpredicted 8-hour origin server misconfiguration across all active nodes served empty payloads. Global LLM crawlers (GPTBot, Google, Anthropic, Perplexity) recognized an anomaly in a primary Source of Truth, triggering a synchronized re-validation sweep of 338,090 requests. Full authority was restored instantly, leading to complete SERP dominance within 180 minutes post-rebound.
-👉 *Read the Full Case Study: `/docs/case-studies/2026-10-system-audit-antifragility.md`*
+👉 *Read the Full Case Study: [`/docs/case-studies/2026-10-system-audit-antifragility.md`*](https://github.com/hanspeterkruesi/E-E-A-T-R/blob/main/docs/case-studies/2026-10-system-audit-antifragility.md)
 
 ### Audit 3: Real-Time Edge Shielding & AI Crawler Audit (November 2026)
 During a massive global AI crawler audit peaking at over **903,000 unique visitors** and **2.13 million requests** in a 24-hour window, the protocol's edge-resilience architecture maintained a **median TTFB of 8 ms**. Custom WAF rules intercepted over **1.7 million non-verified scraper requests** via Managed Challenges, while verified search and AI agents (`Known Bots = true`) received uninterrupted, sub-10ms access to clean JSON-LD and `/llms.txt` payloads.
