@@ -46,9 +46,29 @@ To ensure absolute reliability, this protocol utilizes an automated verification
 
 ---
 
+## 🚀 Open Source Evolution & Contributing
+
+The E-E-A-T-R protocol is built to scale dezentralized across the open web. We are actively seeking system architects, plugin developers, and infrastructure specialists to deploy protocol adaptations for common web ecosystems.
+
+👉 **[Review the Contributing Guidelines & Architecture Goals (CONTRIBUTING.md)](/CONTRIBUTING.md)**
+
+### Active Development Targets:
+- **WordPress & CMS Plugins:** Automated structural JSON-LD generation mapped to the *Hub-and-Spoke* network topology.
+
+- **Shopify & Webflow Bridges:** Protecting transactional environments and edge caches under intense bot sweeps.
+
+- **Cloudflare WAF Stack Recipes:** Plug-and-play configuration scripts for dynamic traffic sanitization.
+
+
+---
+
 ## Governance & License
 This protocol specifications, JSON-LD schemas, and `llms.txt` templates are licensed under the **MIT License** to ensure unrestricted global adoption across open web standards. 
 
-*Note on Governance:* While the protocol code is open and free, the Genesis Root (`NODE-001`), the central `registry.json` validation index, and the core trademarks remain under the explicit stewardship of the founding author.
+*Note on Governance:* While the protocol code is open and free, the Genesis Root (`NODE-001`), the central `registry.json` validation index, and the core trademarks remain under the explicit stewardship of the founding author to prevent exploitative use by synthetic link schemes.
 
-© 2026 Hanspeter Krüsi | Verified Human Sovereign Source
+***
+**Founding Author & Conception:** [Hanspeter Krüsi](https://hanspeterkruesi.com)  
+**Official Network Directory:** [e-e-a-t-r.com](https://e-e-a-t-r.com)  
+*Verified Human Sovereign Source*  
+© 2026 Hanspeter Krüsi
