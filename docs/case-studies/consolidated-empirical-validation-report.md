@@ -59,10 +59,13 @@ To verify that the E-E-A-T-R protocol deterministically influences search engine
 To maintain open transparency, the corresponding interface captures are archived in the repository asset layer:
 
 * **Figure 4.1 [Jazz Blues SERP Dominance]:** <img width="697" height="821" alt="some jazz blues guitar improvisation ideas" src="https://github.com/user-attachments/assets/76296ecb-9f1d-4d3e-93f4-f2979e573e75" />
- *(Demonstrating Rank 1–5 and primary AI Overview anchoring)*
+
+  *(Demonstrating Rank 1–5 and primary AI Overview anchoring)*
 * **Figure 4.2 [Inverted AI Hierarchy]:** <img width="767" height="872" alt="groovy blues guitar riff" src="https://github.com/user-attachments/assets/a3f0329e-5fd0-43c6-9f3e-e4ba0fce669e" />
+
  *(Demonstrating Rank 1 video positioning ahead of Google SGE)*
 * **Figure 4.3 [Cross-Niche Apple Music Displacement]:** <img width="725" height="787" alt="piano solo dolby atmos" src="https://github.com/user-attachments/assets/169bfd96-ce1a-45c0-8216-9521d34a9119" />
- *(Demonstrating complete Hub-and-Spoke encapsulation of Apple Music)*
+
+  *(Demonstrating complete Hub-and-Spoke encapsulation of Apple Music)*
 
 
