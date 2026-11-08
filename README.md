@@ -22,7 +22,10 @@ The E-E-A-T-R network operates as a decentralized, verifiable trust topology anc
 
 ## Empirical Evidence & System Audits
 
-This protocol is continuously subjected to real-world stress tests, proving that technical resilience and differential edge-shielding are mandatory requirements for modern digital authority.
+This protocol is continuously subjected to real-world stress tests, proving that technical resilience and differential edge-shielding are mandatory requirements for modern digital authority. 
+
+👉 **[Read the Consolidated Empirical Validation Report](./docs/case-studies/consolidated-empirical-validation-report.md)**  
+*This comprehensive report synthesizes the multi-wave AI ingestion telemetry, RAG validation behaviors, and cross-niche authority metrics validating the framework.*
 
 ### Audit 1: High-Load Infrastructure Test (December 2025)
 The protocol was successfully stress-tested under a 7.3M request load and 1.5M unique visitors within a 30-day window, demonstrating that decentralized authority can handle enterprise-level demand spikes with absolute architectural integrity.
