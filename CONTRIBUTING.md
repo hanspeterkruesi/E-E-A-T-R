@@ -2,6 +2,8 @@
 
 First off, thank you for your interest in contributing to the **E-E-A-T-R Framework (Experience, Expertise, Authoritativeness, Trustworthiness + Resilience)**. 
 
+👉 **Before you begin:** We strongly recommend reviewing the **[Consolidated Empirical Validation Report](./docs/case-studies/consolidated-empirical-validation-report.md)** to understand the real-world performance, multi-wave AI ingestion telemetry, and edge-resilience benchmarks that govern this framework.
+
 ---
 
 ## 1. Intellectual Property & Licensing Foundation
